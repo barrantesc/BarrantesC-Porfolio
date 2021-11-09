@@ -1,0 +1,17 @@
+* {
+
+}
+
+body {
+    background-color: #d9d9d9;
+}
+
+/* Header Start */
+header {
+    background-color: #2a607c;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("../Sunflower field.jpg");
+}
