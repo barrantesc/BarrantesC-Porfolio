@@ -10,47 +10,59 @@ body {
 
 /* Header Start */
 header {
-    background-color: #2a607c;
     padding: 20px 35px;
+    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #242727;
-}
-
-header h1 {
-    text-shadow: 0 0 1px;
-    background-color: #37b1b9;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("../assets/Images/Background.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
 }
 
 header a {
-    color: #37b1b9;
-    margin-bottom: 10px;
-    
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 
 header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    margin: 7px 0;
 }
 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
 header nav ul li a {
     padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);;
+    color: rgb(165, 127, 150);
 }
 
-/* Hero Section */
+/* .hero {}
+
+Hero Section */
 .hero {
-    background-image: url("../Sunflower field.jpg");
+    background-image: url("../assets/Images/Background.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.hero img {
+    width: 100px;
+    height:  auto;
 }
