@@ -8,7 +8,7 @@ A website to showcase my portfolio
 *CSS
 
 ## Final Product
-![Image of the final product](https://github.com/barrantesc/BarrantesC-Porfolio)
+![Image of the final product]()
 
 ## Website
 https://barrantesc.github.io/BarrantesC-Porfolio/
