@@ -1,6 +1,7 @@
 :root {
     --primary-color: #fce138;
     --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
   }
   
   * {
@@ -26,7 +27,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("./Images/Head\ with\ flowers.jpeg");
+    background-image: url("../Assets/Head\ with\ flowers.jpeg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -72,7 +73,7 @@
   
   /* HERO STYLES START */
   .hero {
-    background-image: url('./Images/Head\ with\ flowers.jpeg');
+    background-image: url('../Assets/Head\ with\ flowers.jpeg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -103,12 +104,7 @@
   }
   /* HERO STYLES END */
   
-  /* UTILITIES */
-  .flex-row {
-    display: flex;
-    justify-content: center;
-  }
-
+  
   /* SECTION TITLE STYLES START */
   .section-title {
     font-size: 48px;
@@ -120,14 +116,22 @@
     width: 50%;
   }
   
+  /* CHECK IF NEEDED */
   .primary-border {
     border-color: var(--primary-color);
   }
   
+  .secondary-border {
+    border-color: var(--tertiary-color);
+  }
   /* SECTION TITLE STYLES END */
   
-
   /* Contact Me STYLES */
+
+.contact-me img {
+    max-height: 100px; 
+}
+
 .contact-me ul {
     display: flex;
     flex-wrap: wrap;
@@ -150,9 +154,6 @@
     text-shadow: none;
   }
 
-  .contact-me img {
-    max-height: 100px; 
-}
   /* Contact Me STYLES END */
   
   
@@ -175,7 +176,9 @@
 
   .work-big h3 {
       color: var(--secondary-color);
+
   }
+
 
   .work {
     margin: 20px;
@@ -188,7 +191,20 @@
     width: 100%;
   }
   
-
+  
+  /* UTILITIES */
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .flex-row {
+    display: flex;
+    justify-content: center;
+  }
   
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px) {
@@ -213,6 +229,11 @@
       font-size: 20px;
     }
   
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
     .hero-cta, .hero-form {
       width: 100%;
     }
@@ -225,10 +246,13 @@
       width: 80%;
     }
     
-    .work {
+    .trainer {
       flex: 0 70%;
     }
     
+    .contact-info iframe{
+      flex: 1 100%;
+    }
   }
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -242,6 +266,26 @@
       text-align: center;
     }
   
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  
+    .trainer-bio h3, .trainer-bio h4 {
+      display: block;
+    }
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -253,10 +297,25 @@
     .section-title {
       width: 95%;
     }
-
-    .work {
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
       flex: 0 100%;
     }
   
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+  
+    .contact-form {
+      order: 3;
+    }
   }
   
