@@ -6,6 +6,9 @@
 
 body {
     background-color: #d9d9d9;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./Images/Pink\ swirl.jpeg");
+    background-size: cover;
 }
 
 /* Header Start */
@@ -18,7 +21,7 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("../assets/Images/Background.jpeg");
+    background-image: url("../assets/Images/Pink\ swirl.jpeg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -31,12 +34,14 @@ header a {
 
 header nav {
     margin: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
 }
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     list-style: none;
 }
 
@@ -44,16 +49,12 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 20px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);;
-    color: rgb(165, 127, 150);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
+    color: rgb(97, 3, 60);
 }
 
-/* .hero {}
-
-Hero Section */
-.hero {
-    background-image: url("../assets/Images/Background.jpeg");
-    background-size: cover;
+/* Hero Section */
+main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -62,7 +63,68 @@ Hero Section */
     background-position: 80%;
 }
 
+
+.hero {
+    background-image: url("../assets/Images/Pink swirl.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-attachment: fixed;
+    background-position: 80%;
+    height: 50vh;
+}
+
+h1 {
+    color: bisque;
+    width: 35%;
+    text-align: left;
+}
+
 .hero img {
-    width: 100px;
-    height:  auto;
+    height: 200px;
+}
+
+.work {
+   float: right;
+   margin-top: 40px;
+}
+
+.work ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.work img {
+    height: 200px;
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+.contact-me {
+    float: left;
+    margin: 0;
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+
+}
+
+.contact-me ul {
+    list-style-type: none;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.contact-me img {
+   
+    max-height: 100px;
+    
+    
 }
