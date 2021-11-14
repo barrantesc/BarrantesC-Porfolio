@@ -177,11 +177,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-     
+     flex-wrap: wrap;
   }
 
   .work-big h3 {
-      color: var(--secondary-color);
+    color: var(--secondary-color);
   }
 
   .work-big img {
