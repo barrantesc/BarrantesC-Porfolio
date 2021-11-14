@@ -262,7 +262,10 @@
     }
 
     .work-big img {
-      max-width: 50%;
+      display: flex;
+      max-width: 90%;
+      height: auto;
+      justify-content: center;
     }
 
     .work {
