@@ -178,8 +178,10 @@
   }
 
   .work-big img {
-    width: 150%;
+    min-width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
   }
 
   .work {
