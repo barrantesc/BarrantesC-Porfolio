@@ -261,6 +261,10 @@
       width: 95%;
     }
 
+    .work-big img {
+      max-width: 50%;
+    }
+
     .work {
       flex: 0 100%;
     }
