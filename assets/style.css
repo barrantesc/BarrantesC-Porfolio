@@ -285,8 +285,9 @@
     .work-big img {
       display: flex;
       max-width: 50%;
-      height: auto;
-      justify-content: center;
+      display: flex;
+      flex: 0 100%;
+      
     }
 
     .work {
