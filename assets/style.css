@@ -244,11 +244,25 @@
       padding: 30px 15px;
     }
   
-    .step h3 {
+    /* .step h3 {
       flex: 1 100%;
       text-align: center;
+    } */
+  
+    .work-big img {
+      display: flex;
+      max-width: 50%;
+      height: auto;
+      justify-content: center;
+    }
+
+    .work {
+      flex: 0 100%;
     }
   
+    .work img {
+      max-width: 30%;
+
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -263,7 +277,7 @@
 
     .work-big img {
       display: flex;
-      max-width: 90%;
+      max-width: 50%;
       height: auto;
       justify-content: center;
     }
@@ -272,5 +286,9 @@
       flex: 0 100%;
     }
   
+    .work img {
+      max-width: 30%;
+    }
+
   }
   
