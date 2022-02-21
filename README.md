@@ -9,7 +9,7 @@ A website to showcase my portfolio
 
 ## Final Product
 
-![Image of the final product](https://github.com/barrantesc/BarrantesC-Porfolio/blob/main/assets/Images/Portfolio%20MockUp.png?raw=true)
+![mockup.png](/mockup.png)
 
 ## Website
 https://barrantesc.github.io/BarrantesC-Porfolio/
